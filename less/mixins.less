@@ -25,6 +25,18 @@
     font-size: @headerLgSz;
     font-weight: 900;
    .txtEngraveFx();
+ 
+   @media @tablet {
+    font-size: 3.6rem;
+    width: 100%;
+    margin-left: 10%;
+    margin-top: -2%;
+
+}
+  @media @phone {
+      font-size: 2.8rem;
+      margin-left: 5%;
+  }
 }
 //header nav link style
 .navLinkStyle{
@@ -33,21 +45,28 @@
     font-family:@hNavFontFam;
     font-size:@hNavSz;
     .txtEngraveFx();
+    @media @tablet {
+        font-size: 2.5rem;
+    }
+
 }
 
 /*HERO MIXINS*/
 
 .hHeroTxtStyle {
     font-family: @hHeroTxtFam;
-    color: @hHeroTxtColor;
+    // color: @hHeroTxtColor;
     font-weight: 400;
-}
+    letter-spacing: -1px;
 
-.heroTitle {
-    font-family:@titleHeroFam;
-    color:@titleHeroColor;
+    @media @tablet {
+        font-size: 3.6rem;
+    }
+    @media @phone {
+        font-size: 2.4rem;
+        font-weight: 600;
+    }
 }
-
 
 /*TOP SECTION MIXINS*/
 .imgWrapPosRow3 {
