@@ -10,43 +10,82 @@
     .heroHeader{
         .hHeroTxtStyle();
             .heroTitle{
-/**FILL IN**/
-                .heroTxt{
-/**FILL IN**/
-                }//end heroTxt
+
              }//end heroTitle
     }//end heroHeader
 }//end heroImgWrap
 
+ .heroBtnLearn {
+    width: 170px;
+    height: 50px;
+    margin: 3.2rem;
+    font-size: 1.8rem;
+    font-family: @bree-font;
+    border: 3px solid @primary-teal;
+    background-color: @off-white;
+    color: @dark-teal;
+    border-radius: 5px;
+ }
+
+ .heroBtnSignUp {
+    width: 170px;
+    height: 50px;
+    margin: 3.2rem;
+    font-size: 1.8rem;
+    font-family: @bree-font;
+    border: 3px solid @primary-teal;
+    background-color: @off-white;
+    color: @dark-teal;
+    border-radius: 5px;
+ }
+
+
+.heroTxt{
+    width: 65%;
+    line-height: 25px;
+    margin-top: 1.5rem;
+}//end heroTxt
+
 /*TOP SECTION*/
-.topSec {
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
+.topWrap {
+    .rowWrap3();
 .topHeader{
-    background:  linear-gradient(to top, transparent 62%, white),linear-gradient(to right, transparent 32%, white);
-    background-color: @light-orange;
- .txtEngraveFx();
- font-weight: 600;
- font-family: @stroke-font;
- color: @dark-teal;
-   padding-left: 32px;
+    padding-left: 32px;
     padding-top: 35px;
     padding-bottom: 35px;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    background:  linear-gradient(to top, transparent 62%, @dark-teal),linear-gradient(to right, transparent 32%, @light-teal);
+    background-color: @primary-teal;
+    font-weight: 600;
+    font-family: @stroke-font;
+    color: @primary-orange;
+border-top: 2px groove @light-teal;
+    .txtEngraveFx();
 }
+    .topTxtWrap {
+        color: #37474f;
+
+    .innerTxt1 {
+    
+    }//end innerTxt1
+
+    .innerTxt2 {
+
+    }//end innerTxt2
+
+    }//end topTxtWrap
+
     .topImgWrap{
+        
      .imgWrapPosRow3();
     }//end topImgWrap
     .topTxtWrap{
        .topTxtWrapStyle();
-       padding-left: 1px;
-       padding-right: px;
+    
     }//end topTxtWrap
 }//end
 .txtRow3{
     .txtTopStyle();
+    .pTxtRow3();
 }//end topTxt
 
 .imgRow3{
@@ -54,6 +93,22 @@
     .hTopBorderRadius();
     border: 1px groove @primary-orange;
     border-bottom: none;
+}
+
+#innerTxt1{
+    border: 1px solid #37474f;
+    border-bottom: none;
+    padding-bottom: 12px;
+    padding-top: 10%;
+    font-size: 4.2;
+}
+
+#innerTxt2{
+    border: 1px solid #37474f;
+    border-top: none;
+    font-size: 1.6rem;
+    font-family: @bree-font;
+    padding-bottom: 10%;
 }
 /*TOP IMG ADJ*/
 #topImg1 {
@@ -67,25 +122,48 @@
 #topTxt1 {
     margin-right: 4%;
     width: 80%;
-    .pTxtRow3();
+
 }
 #topTxt2{
     width: 81%;
     margin-left: 3%;
     margin-right: 7%;
-    .pTxtRow3();
+   
 }
 #topTxt3{
     width: 81%;
-    .pTxtRow3();
+   
+}
+
+.stampBttmWrap{
+    display: flex;
+    justify-content: space-between;
+}
+
+.stampImg{
+    height: 32px;
+    width: 32px;
+    margin-top: -15px;
+    margin-bottom: 10px;
+    align-self: center;
+}
+
+.stampImg2{
+    height: 32px;
+    width: 32px;
+    margin-top: 10px;
+    margin-bottom: -15px;
+   
 }
 
 /**MID SECTION**/
 .midWrap{
     background: linear-gradient(to right, transparent 5%, white),  url(/src/img/mid-bg-home.jpg);
     .bgImgCover();
-    height: 185px;
+    height: 285px;
     margin-top: 5.2rem;
+    border-top: 2px groove @white;
+    border-bottom: 2px groove @white;
 
 .midTxt {
     float: right;
@@ -96,5 +174,56 @@
     width: 50%;
     font-weight: 400;
 }
+
 }
+
+.bttmWrap {
+  display: flex;
+  flex-direction: column;
+    align-items: center;
+    .bttmHeader {
+        margin: 3.2rem;
+        padding: 3.2rem;
+    } //end bttmHeader
+    .bttmImgWrap {
+        display: flex;
+        justify-content: space-around;
+    }//end bttmImgWrap
+    .bttmBtnJoin {
+        width: 170px;
+        height: 50px;
+        margin: 3.2rem;
+        font-size: 1.8rem;
+        font-family: @bree-font;
+        border: 3px solid @primary-teal;
+        background-color: @off-white;
+        color: @dark-teal;
+        border-radius: 5px;
+    }//emd bttmBtnJoin
+
+    }//end BttmWrap
+
+
+
+    footer {
+        display: flex;
+        flex-direction: column;
+        background-color: @primary-teal;
+        border-top: 2px groove @primary-orange;
+            .bttmNavWrap {
+                display: flex;
+                justify-content: space-evenly;              
+                padding: 2.2rem;
+            
+            }
+            .copyright {
+                display: flex;
+                justify-content: center;
+                padding: 1.0rem;
+                font-size: 1.2rem;
+                background-color: @primary-orange;
+                border-top: 2px groove @primary-teal;
+              
+            }
+    }
 

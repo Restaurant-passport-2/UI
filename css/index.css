@@ -168,16 +168,15 @@ p {
   font-size: 1.6rem;
   line-height: 1.6;
   padding: 1.2rem;
-  font-style: italic;
   font-family: 'Stoke', serif;
   font-weight: 550;
 }
 body {
-  background-color: #f8f8f8;
+  background-color: #fff3e0;
   margin: 7px;
 }
 .container {
-  max-width: 1000px;
+  max-width: 100%;
   margin: 0 auto;
   background-color: #fafafa;
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
@@ -209,14 +208,14 @@ body {
 /*HEADER MIXINS*/
 .hCoNameStyle {
   font-family: 'Stoke', serif;
-  color: #008e68;
+  color: #f79905;
   font-size: 3.8rem;
   font-weight: 900;
   text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.3), 0px -1px 0px rgba(0, 0, 0, 0.7);
 }
 .navLinkStyle {
   text-decoration: none;
-  color: #be6b00;
+  color: #f79905;
   font-family: 'Stoke', serif;
   font-size: 1.8rem;
   text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.3), 0px -1px 0px rgba(0, 0, 0, 0.7);
@@ -236,7 +235,7 @@ body {
   display: flex;
   justify-content: center;
   margin-top: 5%;
-  max-width: 1000px;
+  max-width: 100%;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   border-bottom: none;
@@ -252,25 +251,29 @@ body {
 }
 .txtTopStyle {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   vertical-align: middle;
-  padding-top: 3%;
-  padding-bottom: 3%;
-  width: 100%;
-  height: 75%;
-  background-color: #44bf9c;
-  font-size: 2.1rem;
-  font-family: 'Permanent Marker', cursive;
+  padding-top: 2.2rem;
+  padding-bottom: 2.2rem;
+  margin-top: 3%;
+  background-color: #f8f8f8;
   text-align: center;
-  border: 2px groove #f79905;
-  border-top: 1px inset #44bf9c;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  border: 3px solid #37474f;
+  border-radius: 7px;
+}
+.rowWrap3 {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
 }
 .pTxtRow3 {
-  padding-left: 2%;
-  padding-right: 2%;
+  padding-left: 1.8rem;
+  padding-right: 1.8rem;
+}
+.contentShadow {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
 .heroImgWrap {
   display: flex;
@@ -290,64 +293,83 @@ body {
   color: #f79905;
   font-weight: 400;
 }
-.heroImgWrap .heroHeader .heroTitle {
-  /**FILL IN**/
+.heroBtnLearn {
+  width: 170px;
+  height: 50px;
+  margin: 3.2rem;
+  font-size: 1.8rem;
+  font-family: 'Bree Serif', serif;
+  border: 3px solid #44bf9c;
+  background-color: #f8f8f8;
+  color: #008e68;
+  border-radius: 5px;
 }
-.heroImgWrap .heroHeader .heroTitle .heroTxt {
-  /**FILL IN**/
+.heroBtnSignUp {
+  width: 170px;
+  height: 50px;
+  margin: 3.2rem;
+  font-size: 1.8rem;
+  font-family: 'Bree Serif', serif;
+  border: 3px solid #44bf9c;
+  background-color: #f8f8f8;
+  color: #008e68;
+  border-radius: 5px;
+}
+.heroTxt {
+  width: 65%;
+  line-height: 25px;
+  margin-top: 1.5rem;
 }
 /*TOP SECTION*/
-.topSec {
+.topWrap {
   display: flex;
   flex-direction: column;
   align-content: center;
   justify-content: center;
 }
-.topSec .topHeader {
-  background: linear-gradient(to top, transparent 62%, white), linear-gradient(to right, transparent 32%, white);
-  background-color: #ffca49;
-  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.3), 0px -1px 0px rgba(0, 0, 0, 0.7);
-  font-weight: 600;
-  font-family: 'Stoke', serif;
-  color: #008e68;
+.topWrap .topHeader {
   padding-left: 32px;
   padding-top: 35px;
   padding-bottom: 35px;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  background: linear-gradient(to top, transparent 62%, #008e68), linear-gradient(to right, transparent 32%, #7bf2cd);
+  background-color: #44bf9c;
+  font-weight: 600;
+  font-family: 'Stoke', serif;
+  color: #f79905;
+  border-top: 2px groove #7bf2cd;
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.3), 0px -1px 0px rgba(0, 0, 0, 0.7);
 }
-.topSec .topImgWrap {
+.topWrap .topTxtWrap {
+  color: #37474f;
+}
+.topWrap .topImgWrap {
   display: flex;
   justify-content: center;
   margin-top: 5%;
-  max-width: 1000px;
+  max-width: 100%;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   border-bottom: none;
 }
-.topSec .topTxtWrap {
+.topWrap .topTxtWrap {
   display: flex;
   margin-left: 6.5%;
   margin-right: 6.5%;
-  padding-left: 1px;
-  padding-right: px;
 }
 .txtRow3 {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   vertical-align: middle;
-  padding-top: 3%;
-  padding-bottom: 3%;
-  width: 100%;
-  height: 75%;
-  background-color: #44bf9c;
-  font-size: 2.1rem;
-  font-family: 'Permanent Marker', cursive;
+  padding-top: 2.2rem;
+  padding-bottom: 2.2rem;
+  margin-top: 3%;
+  background-color: #f8f8f8;
   text-align: center;
-  border: 2px groove #f79905;
-  border-top: 1px inset #44bf9c;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  border: 3px solid #37474f;
+  border-radius: 7px;
+  padding-left: 1.8rem;
+  padding-right: 1.8rem;
 }
 .imgRow3 {
   height: 15%;
@@ -356,6 +378,20 @@ body {
   border-top-right-radius: 5px;
   border: 1px groove #f79905;
   border-bottom: none;
+}
+#innerTxt1 {
+  border: 1px solid #37474f;
+  border-bottom: none;
+  padding-bottom: 12px;
+  padding-top: 10%;
+  font-size: 4.2;
+}
+#innerTxt2 {
+  border: 1px solid #37474f;
+  border-top: none;
+  font-size: 1.6rem;
+  font-family: 'Bree Serif', serif;
+  padding-bottom: 10%;
 }
 /*TOP IMG ADJ*/
 #topImg1 {
@@ -368,20 +404,31 @@ body {
 #topTxt1 {
   margin-right: 4%;
   width: 80%;
-  padding-left: 2%;
-  padding-right: 2%;
 }
 #topTxt2 {
   width: 81%;
   margin-left: 3%;
   margin-right: 7%;
-  padding-left: 2%;
-  padding-right: 2%;
 }
 #topTxt3 {
   width: 81%;
-  padding-left: 2%;
-  padding-right: 2%;
+}
+.stampBttmWrap {
+  display: flex;
+  justify-content: space-between;
+}
+.stampImg {
+  height: 32px;
+  width: 32px;
+  margin-top: -15px;
+  margin-bottom: 10px;
+  align-self: center;
+}
+.stampImg2 {
+  height: 32px;
+  width: 32px;
+  margin-top: 10px;
+  margin-bottom: -15px;
 }
 /**MID SECTION**/
 .midWrap {
@@ -391,8 +438,10 @@ body {
   -o-background-size: cover;
   background-size: cover;
   max-width: 100%;
-  height: 185px;
+  height: 285px;
   margin-top: 5.2rem;
+  border-top: 2px groove #fafafa;
+  border-bottom: 2px groove #fafafa;
 }
 .midWrap .midTxt {
   float: right;
@@ -403,16 +452,59 @@ body {
   width: 50%;
   font-weight: 400;
 }
+.bttmWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bttmWrap .bttmHeader {
+  margin: 3.2rem;
+  padding: 3.2rem;
+}
+.bttmWrap .bttmImgWrap {
+  display: flex;
+  justify-content: space-around;
+}
+.bttmWrap .bttmBtnJoin {
+  width: 170px;
+  height: 50px;
+  margin: 3.2rem;
+  font-size: 1.8rem;
+  font-family: 'Bree Serif', serif;
+  border: 3px solid #44bf9c;
+  background-color: #f8f8f8;
+  color: #008e68;
+  border-radius: 5px;
+}
+footer {
+  display: flex;
+  flex-direction: column;
+  background-color: #44bf9c;
+  border-top: 2px groove #f79905;
+}
+footer .bttmNavWrap {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2.2rem;
+}
+footer .copyright {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+  font-size: 1.2rem;
+  background-color: #f79905;
+  border-top: 2px groove #44bf9c;
+}
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 120px;
   max-width: 100%;
-  background-color: #7bf2cd;
+  background-color: #44bf9c;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-  border-bottom: 1px groove #f79905;
+  border-bottom: 2px groove #008e68;
 }
 header .logoCompanyNameWrap {
   margin-left: 1.2rem;
@@ -421,7 +513,7 @@ header .logoCompanyNameWrap {
 }
 header .logoCompanyNameWrap .companyName {
   font-family: 'Stoke', serif;
-  color: #008e68;
+  color: #f79905;
   font-size: 3.8rem;
   font-weight: 900;
   text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.3), 0px -1px 0px rgba(0, 0, 0, 0.7);
@@ -434,7 +526,7 @@ header #myPassport {
 }
 .navAnchor {
   text-decoration: none;
-  color: #be6b00;
+  color: #f79905;
   font-family: 'Stoke', serif;
   font-size: 1.8rem;
   text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.3), 0px -1px 0px rgba(0, 0, 0, 0.7);
