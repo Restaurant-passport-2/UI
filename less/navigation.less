@@ -40,6 +40,8 @@ margin-right:@mWindowBorder;
         }
     }
     #logIn {
+
+   
         @media @tablet {
             color:@dark-orange;
             font-weight: 700;
@@ -56,6 +58,14 @@ a {
 }
 .navAnchor {
   .navLinkStyle();
+
+  &:hover{
+      .glow();
+  }
+
+  &:active{
+      .glowT();
+  }
 
 }
 

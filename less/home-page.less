@@ -33,27 +33,18 @@
 }
 
  .heroBtnLearn {
-    width: 170px;
-    height: 50px;
-    margin: 3.2rem;
-    font-size: 1.8rem;
-    font-family: @bree-font;
-    border: 3px solid @primary-teal;
-    background-color: @off-white;
-    color: @dark-teal;
-    border-radius: 5px;
+     .btnStyle();
+
+     &:hover{
+         .btnHover();
+     }
  }
 
  .heroBtnSignUp {
-    width: 170px;
-    height: 50px;
-    margin: 3.2rem;
-    font-size: 1.8rem;
-    font-family: @bree-font;
-    border: 3px solid @primary-teal;
-    background-color: @off-white;
-    color: @dark-teal;
-    border-radius: 5px;
+    .btnStyle();
+    &:hover{
+        .btnHover();
+    }
  }
 
 
@@ -248,25 +239,20 @@
 
     }//end bttmImgWrap
     .bttmBtnJoin {
-        width: 170px;
-        height: 50px;
-        margin: 3.2rem;
-        font-size: 1.8rem;
-        font-family: @bree-font;
-        border: 3px solid @primary-teal;
-        background-color: @off-white;
-        color: @dark-teal;
-        border-radius: 5px;
-
-        &:hover {
-            
+        .btnStyle();
+        &:hover{
+            .btnHover();
         }
 
         @media @phone {
             width: 275px;
             height: 90px;
             margin-top: -3%;
-            font-size: 3.2rem;
+            font-size: 3.6rem;
+
+            &:focus{
+                font-size: 4.8rem;
+            }
         }
 
     }//emd bttmBtnJoin
