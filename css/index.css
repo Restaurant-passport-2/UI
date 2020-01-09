@@ -378,8 +378,7 @@ body {
 @media (max-width: 500px) {
   .heroImgWrap .heroTxt {
     width: 100%;
-    line-height: 3.2rem;
-    font-size: 1.8rem;
+    font-size: 1.4rem;
   }
 }
 @media (max-width: 600px) {
